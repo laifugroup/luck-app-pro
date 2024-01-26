@@ -1,0 +1,30 @@
+export default {
+  'menu.luck.inviteLog': '邀请明细',
+  'menu.luck.inviteLogList': '邀请明细',
+  'menu.luck.inviteLogView': '邀请明细详情',
+  'menu.luck.inviteLogForm': '邀请明细编辑',
+
+  'inviteLog.form': '邀请明细信息',
+  'inviteLog.form.id': 'ID',
+  'inviteLog.form.id.placeholder': '请输入ID',
+  'inviteLog.form.userId': '用户ID',
+  'inviteLog.form.userId.placeholder': '请输入用户ID',
+  'inviteLog.form.groupId': '群组ID',
+  'inviteLog.form.groupId.placeholder': '请输入群组ID',
+
+  'inviteLog.form.url': '邀请链接',
+  'inviteLog.form.url.placeholder': '请输入邀请链接',
+  'inviteLog.form.urlHash': '链接HASH',
+  'inviteLog.form.urlHash.placeholder': '请输入链接HASH',
+  'inviteLog.form.inviteeUserId': '被邀请人',
+  'inviteLog.form.inviteeUserId.placeholder': '请输入被邀请人',
+  'inviteLog.form.inviteUrl': '邀请URL',
+  'inviteLog.form.inviteUrl.placeholder': '请输入邀请URL',
+  'inviteLog.form.remark': '备注',
+  'inviteLog.form.remark.placeholder': '请输入备注',
+
+  'inviteLog.form.status.placeholder': '请选择状态',
+  'inviteLog.form.status.enable': '已启用',
+  'inviteLog.form.status.disable': '已禁用',
+  'inviteLog.form.status.all': '全部',
+};

@@ -35,10 +35,17 @@ export default {
   'creditLog.form.type.ADJUSTMENT_DOWN': '调账(扣除)',
   'creditLog.form.type.ADJUSTMENT_UP': '调账(增加)',
   'creditLog.form.type.PLATFORM_WATER': '平台抽水',
-  'creditLog.form.type.INVITE_WATER': '邀请返利',
+  'creditLog.form.type.AGENT_WATER': '代理抽水',
   'creditLog.form.type.CHILD_BOOM_REBATE': '下级中雷返利',
   'creditLog.form.type.CREDIT_UP': '充值上分',
   'creditLog.form.type.CREDIT_DOWN': '提现下分',
   'creditLog.form.type.ACTIVITY': '活动上分',
+  'creditLog.form.type.INVITE': '邀请返利0.1U',
+  'creditLog.form.type.CREDIT_DOWN_REJECT': '下分不通过',
+  'creditLog.form.type.CREDIT_UP_PASS': '上分通过',
+
+
+
+
   'creditLog.form.type.all': '全部',
 };

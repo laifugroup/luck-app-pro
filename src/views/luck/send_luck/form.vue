@@ -136,19 +136,19 @@ const { t } = useI18n()
 const contentStatusOptions = computed<SelectOptionData[]>(() => [
  
   {
-    label: t("sendLuck.form.status.enable"),
+    label: t("sendLuck.form.status.UNSETTLED"),
     value: 1,
   },
   {
-    label: t("sendLuck.form.status.disable"),
+    label: t("sendLuck.form.status.TERMED"),
     value: 2,
   },
   {
-    label: t("sendLuck.form.status.expried"),
+    label: t("sendLuck.form.status.EXPIRED"),
     value: 3,
   },
   {
-    label: t("sendLuck.form.status.cancel"),
+    label: t("sendLuck.form.status.CANCEL"),
     value: 4,
   },
   {

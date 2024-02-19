@@ -85,5 +85,5 @@ export async function add(data: CreditApplyReq) {
 }
 
 export async function update(id: BaseType, data: CreditApplyReq) {
-  return axios.put('/luck/v1/credit_apply?id=' + id, data);
+  return axios.put('/luck/v1/credit_apply/audit?id=' + id, data);
 }

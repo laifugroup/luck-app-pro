@@ -28,10 +28,10 @@ export default {
 
   'sendLuck.form.status': '状态',
   'sendLuck.form.status.placeholder': '请选择状态',
-  'sendLuck.form.status.enable': '已结算',
-  'sendLuck.form.status.disable': '未结算',
-  'sendLuck.form.status.expried': '已过期',
-  'sendLuck.form.status.cancel': '已撤销',
+  'sendLuck.form.status.UNSETTLED': '未结算',
+  'sendLuck.form.status.TERMED': '已结算',
+  'sendLuck.form.status.EXPIRED': '已过期',
+  'sendLuck.form.status.CANCEL': '已撤销',
 
   'sendLuck.form.status.all': '-',
 };

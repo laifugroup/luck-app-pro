@@ -17,10 +17,9 @@
                 </a-form-item>
               </a-col>
               <a-col :span="8">
-                <a-form-item field="userName" :label="$t('sendLuck.form.userName')">
-                  <a-input v-model="formModel.userName" 
-                  :placeholder="$t('sendLuck.form.userName.placeholder')"
-                    />
+                <a-form-item field="status" :label="$t('sendLuck.form.status')">
+                  <a-select v-model="formModel.status" :options="contentStatusOptions"
+                    :placeholder="$t('sendLuck.form.status.placeholder')" />
                 </a-form-item>
               </a-col>
             </a-row>
@@ -254,6 +253,7 @@ const columns = computed<TableColumnData[]>(() => [
     title: t("default.form.id"),
     dataIndex: "id",
     ellipsis: true,
+    tooltip: true,
     sortable: {
       sortDirections: ["ascend", "descend"],
     },
@@ -264,10 +264,7 @@ const columns = computed<TableColumnData[]>(() => [
     ellipsis: true,
     tooltip: true,
   },
-  {
-    title: t("sendLuck.form.userName"),
-    dataIndex: "userName",
-  },
+
 
   {
     title: t("sendLuck.form.firstName"),
@@ -277,6 +274,8 @@ const columns = computed<TableColumnData[]>(() => [
   {
     title: t("sendLuck.form.groupId"),
     dataIndex: "groupId",
+    ellipsis: true,
+    tooltip: true,
   },
   {
     title: t("sendLuck.form.credit"),
@@ -339,21 +338,20 @@ const columns = computed<TableColumnData[]>(() => [
 ])
 
 const contentStatusOptions = computed<SelectOptionData[]>(() => [
- 
   {
-    label: t("sendLuck.form.status.enable"),
+    label: t("sendLuck.form.status.UNSETTLED"),
     value: 1,
   },
   {
-    label: t("sendLuck.form.status.disable"),
+    label: t("sendLuck.form.status.TERMED"),
     value: 2,
   },
   {
-    label: t("sendLuck.form.status.expried"),
+    label: t("sendLuck.form.status.EXPIRED"),
     value: 3,
   },
   {
-    label: t("sendLuck.form.status.cancel"),
+    label: t("sendLuck.form.status.CANCEL"),
     value: 4,
   },
   {

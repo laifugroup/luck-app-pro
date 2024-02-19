@@ -399,7 +399,7 @@ const contentTypeOptions = computed<SelectOptionData[]>(() => [
   },
 
   {
-    label: t("creditLog.form.type.INVITE_WATER"),
+    label: t("creditLog.form.type.AGENT_WATER"),
     value: 13,
   },
   {
@@ -419,6 +419,19 @@ const contentTypeOptions = computed<SelectOptionData[]>(() => [
     label: t("creditLog.form.type.ACTIVITY"),
     value: 17,
   },
+  {
+    label: t("creditLog.form.type.INVITE"),
+    value: 18,
+  },
+  {
+    label: t("creditLog.form.type.CREDIT_DOWN_REJECT"),
+    value: 19,
+  },
+  {
+    label: t("creditLog.form.type.CREDIT_UP_PASS"),
+    value: 20,
+  },
+
 
   {
     label: t("creditLog.form.type.all"),

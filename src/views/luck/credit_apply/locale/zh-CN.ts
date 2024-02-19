@@ -32,12 +32,12 @@ export default {
   'creditApply.form.type.DOWN': '下分',
   'creditApply.form.type.all': '全部',
 
-  //1-已申请,2-已通过,待交易,3-交易失败,4-交易成功,5-已驳回
+  //1-已申请,2-已通过,3-交易失败,4-交易成功,5-已驳回
   'creditApply.form.status': '状态',
   'creditApply.form.status.placeholder': '请选择状态',
 
   'creditApply.form.status.APPLY': '已申请',
-  'creditApply.form.status.AUDIT_PASS': '已通过,待交易',
+  'creditApply.form.status.AUDIT_PASS': '已通过',
   'creditApply.form.status.TRADE_FAIL': '交易失败',
   'creditApply.form.status.TRADE_SUCCESS': '交易成功',
   'creditApply.form.status.REJECT': '已驳回',

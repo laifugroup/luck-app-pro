@@ -19,7 +19,7 @@ export interface DataChainGrowthRes {
   };
 }
 export function queryDataChainGrowth(data: DataChainGrowth) {
-  return axios.post<DataChainGrowthRes>('/api/data-chain-growth', data);
+  return axios.post<DataChainGrowthRes>('/luck/v1/dashboard/api/data-chain-growth', data);
 }
 
 export interface PopularAuthorRes {
@@ -32,7 +32,7 @@ export interface PopularAuthorRes {
 }
 
 export function queryPopularAuthor() {
-  return axios.get<PopularAuthorRes>('/api/popular-author/list');
+  return axios.get<PopularAuthorRes>('/luck/v1/dataAnalysis/api/popular-author/list');
 }
 
 export interface ContentPublishRecord {
@@ -42,11 +42,11 @@ export interface ContentPublishRecord {
 }
 
 export function queryContentPublish() {
-  return axios.get<ContentPublishRecord[]>('/api/content-publish');
+  return axios.get<ContentPublishRecord[]>('/luck/v1/dataAnalysis/api/content-publish');
 }
 
 export function queryContentPeriodAnalysis() {
-  return axios.post<GeneralChart>('/api/content-period-analysis');
+  return axios.post<GeneralChart>('/luck/v1/dataAnalysis/api/content-period-analysis');
 }
 
 export interface PublicOpinionAnalysis {
@@ -59,7 +59,7 @@ export interface PublicOpinionAnalysisRes {
 }
 export function queryPublicOpinionAnalysis(data: DataChainGrowth) {
   return axios.post<PublicOpinionAnalysisRes>(
-    '/api/public-opinion-analysis',
+    '/luck/v1/dataAnalysis/api/public-opinion-analysis',
     data
   );
 }

@@ -1,8 +1,9 @@
-import Mock from 'mockjs';
+import Mock, { mock } from 'mockjs';
 import setupMock, { successResponseWrap } from '@/utils/setup-mock';
 import { PostData } from '@/types/global';
 
 setupMock({
+  mock: false,
   setup() {
     Mock.mock(
       new RegExp('/api/public-opinion-analysis'),
@@ -16,7 +17,7 @@ setupMock({
               y: Mock.Random.natural(0, 100),
               name: String(name),
             }));
-          };
+          }; 
           return successResponseWrap({
             count: 5670,
             growth: 206.32,

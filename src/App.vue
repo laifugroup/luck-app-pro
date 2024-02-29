@@ -19,5 +19,5 @@
       default:
         return zhCN;
     }
-  });
+  }); 
 </script>

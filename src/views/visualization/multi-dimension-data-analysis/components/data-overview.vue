@@ -267,13 +267,13 @@
       xAxis.value = data.xAxis;
       data.data.forEach((el) => {
         if (el.name === '内容生产量') {
-          contentProductionData.value = el.value;
+          contentProductionData.value = el.value ? el.value : [];;
         } else if (el.name === '内容点击量') {
-          contentClickData.value = el.value;
+          contentClickData.value = el.value ? el.value : [];;
         } else if (el.name === '内容曝光量') {
-          contentExposureData.value = el.value;
+          contentExposureData.value = el.value ? el.value : [];;
         }
-        activeUsersData.value = el.value;
+        activeUsersData.value = el.value ? el.value : [];;
       });
     } catch (err) {
       // you can report use errorHandler or other
